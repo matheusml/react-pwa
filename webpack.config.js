@@ -1,11 +1,20 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({ template: 'index.html' });
 
+const buildDirectory = path.join(__dirname, './build');
+
 module.exports = {
   entry: './src/index.js',
+  devServer: {
+    historyApiFallback: true,
+  },
   output: {
-    filename: 'bundle.js',
+    path: buildDirectory,
+    publicPath: '/',
+    filename: '[name]-[hash:8].js',
+    chunkFilename: '[name]-[chunkhash:8].js',
   },
   module: {
     loaders: [
@@ -20,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
       },
       {
         test: /.(png|woff(2)?|eot|otf|ttf|svg)(\?[a-z0-9=\.]+)?$/,

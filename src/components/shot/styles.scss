@@ -1,0 +1,46 @@
+.container {
+  position: relative;
+  background-color: #fff;
+  display: inline-block;
+  padding: 0.6em;
+  margin: 1em;
+  border-radius: 4px;
+  width: 17em;
+  height: 14em;
+  cursor: pointer;
+}
+
+.container span {
+  display: inline;
+  font-size: 11px;
+  line-height: 1;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding: 0 1.5em;
+}
+
+.content > img {
+  width: 100%;
+}
+
+.tools {
+  position: absolute;
+  bottom: 0.4em;
+  left: 3em;
+}
+
+.tools span {
+  color: #aaa;
+}
+
+.views {
+  background-image: url('../../assets/images/view.svg');
+}
+
+.likes {
+  background-image: url('../../assets/images/like.svg');
+}
+
+.calendar {
+  background-image: url('../../assets/images/calendar.svg');
+}
