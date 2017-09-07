@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import ShotDescription from '../shot-description/ShotDescription';
 import parseDate from '../../services/date';
@@ -48,13 +49,13 @@ Shot.defaultProps = {
 };
 
 Shot.propTypes = {
-  id: React.PropTypes.number.isRequired,
-  image: React.PropTypes.string.isRequired,
-  viewsCount: React.PropTypes.number.isRequired,
-  likesCount: React.PropTypes.number.isRequired,
-  date: React.PropTypes.string.isRequired,
-  title: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string,
+  id: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+  viewsCount: PropTypes.number.isRequired,
+  likesCount: PropTypes.number.isRequired,
+  date: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
 };
 
 export default Shot;

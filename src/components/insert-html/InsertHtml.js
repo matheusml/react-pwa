@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const insertHtml = (text) => {
   if (text) {
@@ -25,8 +26,8 @@ InsertHtml.defaultProps = {
 };
 
 InsertHtml.propTypes = {
-  maxLength: React.PropTypes.number,
-  text: React.PropTypes.string,
+  maxLength: PropTypes.number,
+  text: PropTypes.string,
 };
 
 

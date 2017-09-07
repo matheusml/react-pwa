@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import InsertHtml from '../insert-html/InsertHtml';
@@ -25,10 +26,10 @@ ShotDescription.defaultProps = {
 };
 
 ShotDescription.propTypes = {
-  id: React.PropTypes.number.isRequired,
-  showDescription: React.PropTypes.bool.isRequired,
-  title: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string,
+  id: PropTypes.number.isRequired,
+  showDescription: PropTypes.bool.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
 };
 
 export default ShotDescription;

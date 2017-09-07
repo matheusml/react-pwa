@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import InsertHtml from '../insert-html/InsertHtml';
@@ -54,7 +55,7 @@ class ShotDetails extends Component {
 }
 
 ShotDetails.propTypes = {
-  match: React.PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  match: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
 };
 
 export default ShotDetails;
