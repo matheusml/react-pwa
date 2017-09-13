@@ -4,7 +4,15 @@ var __wpo = {
       "/main-8d6591a5.js",
       "/style-2ab770f6.css",
       "/",
-      "/manifest.json"
+      "/manifest.json",
+      "/images/icons/icon-128x128.png",
+      "/images/icons/icon-144x144.png",
+      "/images/icons/icon-152x152.png",
+      "/images/icons/icon-192x192.png",
+      "/images/icons/icon-384x384.png",
+      "/images/icons/icon-512x512.png",
+      "/images/icons/icon-72x72.png",
+      "/images/icons/icon-96x96.png"
     ],
     "additional": [],
     "optional": []
@@ -14,11 +22,18 @@ var __wpo = {
     "c1d0b8f801b071b75b74f4424cfd3b37583ef68f": "/main-8d6591a5.js",
     "8aed980307260abb30ce28d8ade5552460483a74": "/style-2ab770f6.css",
     "16e986a74e251ff8c206d1837481e55063398b17": "/",
-    "9093814becdbba3d1ec51bc015b063952b77dbbd": "/manifest.json"
+    "0005d50926d50f874baad7864b2fb2d2e0a5ae59": "/manifest.json",
+    "b241c08c7776cc35ae5e863912ab7ff66cda85f5": "/images/icons/icon-128x128.png",
+    "544ce140a01a049f163cb73194a1703f1559ac1f": "/images/icons/icon-144x144.png",
+    "f57081f9d2fc0c50a6158c6a9410fd2669e70efc": "/images/icons/icon-152x152.png",
+    "a6a6e24a510b245cadd3532b37d774e648d897a4": "/images/icons/icon-192x192.png",
+    "565c7de57338a93fbd36e42bea2de6cd2c3cb924": "/images/icons/icon-512x512.png",
+    "158c3b4380f00782e30c911505fcf1826f15a88d": "/images/icons/icon-72x72.png",
+    "0b371cf9cae122d4b5731925d5baee1bae25ca16": "/images/icons/icon-96x96.png"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2017-9-13 19:57:21",
+  "version": "2017-9-13 20:15:54",
   "name": "webpack-offline",
   "pluginVersion": "4.8.3",
   "relativePaths": false
