@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const buildDirectory = path.join(__dirname, './build');
 
@@ -36,6 +37,9 @@ module.exports = (env) => {
       },
     }),
     new ExtractTextPlugin('style-[contenthash:8].css'),
+    new CopyWebpackPlugin([
+      { from: 'manifest.json' },
+    ]),
     new OfflinePlugin(),
   ];
 

@@ -1,0 +1,9 @@
+{
+  "name": "Dribble App",
+  "short_name": "Dribble",
+  "theme_color": "rgba(47,47,47,0.98)",
+  "background_color": "rgba(47,47,47,0.98)",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+}
