@@ -5,7 +5,7 @@ import Shot from '../shot/Shot';
 import getShots from '../../services/shots';
 
 const PAGE = 1;
-const PER_PAGE = 16;
+const PER_PAGE = 20;
 
 class Shots extends Component {
   constructor(props) {
