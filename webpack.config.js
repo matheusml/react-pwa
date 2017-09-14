@@ -39,6 +39,7 @@ module.exports = () => {
     new ExtractTextPlugin('style-[contenthash:8].css'),
     new CopyWebpackPlugin([
       { from: 'manifest.json' },
+      { from: 'src/assets/icons', to: 'images/icons' },
     ]),
   ];
 
