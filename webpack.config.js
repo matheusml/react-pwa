@@ -6,8 +6,8 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const buildDirectory = path.join(__dirname, './build');
 
-module.exports = (env) => {
-  const nodeEnv = env && env.prod ? 'production' : 'development';
+module.exports = () => {
+  const nodeEnv = process.env.NODE_ENV && process.env.NODE_ENV ? 'production' : 'development';
   const isProd = nodeEnv === 'production';
 
   const plugins = [
