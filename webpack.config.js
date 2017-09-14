@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const OfflinePlugin = require('offline-plugin');
 
 const buildDirectory = path.join(__dirname, './build');
 
@@ -53,6 +54,7 @@ module.exports = () => {
           join_vars: true,
         },
       }),
+      new OfflinePlugin(),
     );
   }
 
